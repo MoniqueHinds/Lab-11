@@ -93,7 +93,7 @@ putForm.addEventListener('submit', function (e) {
         putForm.reset();
     };
 
-    xhr.send(JSON.stringify({ title: title, body: body }));
+    xml.send(JSON.stringify({ title: title, body: body }));
 });
 
 deleteForm.addEventListener('submit', function (e) {
@@ -103,7 +103,7 @@ deleteForm.addEventListener('submit', function (e) {
     fetch('https://jsonplaceholder.typicode.com/posts/' + id, { method: 'DELETE' })
         .then(function (response) {
             if (response.ok) {
-                
+
                 // i know technically post cant be deleted from jsonplaceholder 
                 resultDiv.innerHTML = "<p style='color:green;'>Successfully deleted</p>";
             } else {
