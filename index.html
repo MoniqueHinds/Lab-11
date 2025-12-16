@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 10 API Calls</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Lab 10: API Calls</h1>
+
+    <!-- Buttons for GET requests -->
+    <button id="fetchBtn">Fetch Post 1 (GET)</button>
+    <button id="fetchBtn2">Fetch Post 2 (GET)</button>
+
+    <!-- Div to display results -->
+    <div id="result"></div>
+
+    <hr>
+
+    <!-- Form to create a new post (POST) -->
+    <h2>Create a New Post</h2>
+    <form id="postForm">
+        <input type="text" id="postTitle" placeholder="Title" required><br>
+        <textarea id="postBody" placeholder="Body" required></textarea><br>
+        <button type="submit">Send POST Request</button>
+    </form>
+
+    <hr>
+
+    <!-- Form to update a post (PUT) -->
+    <h2>Update a Post</h2>
+    <form id="putForm">
+        <input type="number" id="putId" placeholder="Post ID" required><br>
+        <input type="text" id="putTitle" placeholder="Updated Title" required><br>
+        <textarea id="putBody" placeholder="Updated Body" required></textarea><br>
+        <button type="submit">Send PUT Request</button>
+    </form>
+
+
+    <hr>
+    <!-- delete form bonus  -->
+    <h2>Delete a Post</h2>
+    <form id="deleteForm">
+        <input type="number" id="deleteId" placeholder="Post ID to delete" required><br>
+        <button type="submit">Send DELETE Request</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
